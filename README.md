@@ -4,4 +4,4 @@
 
 -Utilizes a local database to store data about income/expenses and allows for full CRUD operations (add, remove, update delete) for any given income/expense.
 
--Built using ASP.Net Core MVC and utilized bootstrap and sync fusion libraries. 
+-Built using C#, ASP.Net Core MVC and utilized Bootstrap and Syncfusion libraries for styling/components. 
