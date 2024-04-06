@@ -106,9 +106,22 @@
 				<h5 class="fw-bold">Recent Transactions</h5>
 			</div>
 			<div class="px-4 pb-4">
-				<ejs-grid id="recent-transactions">
-
+				<ejs-grid id="recent-transactions" dataSource="@ViewBag.RecentTransactions">
+					<e-grid-columns>
+						<e-grid-column headerText="Category" field="CategoryTitleWithIcon"></e-grid-column>
+						<e-grid-column headerText="Date" field="Date" width="130px" type"="date" format="MMM-dd-yyyy" textAlign="Left"></e-grid-column>
+						<e-grid-column headerText="Amount" field="FormattedAmount" width="110px" textAlign="Right"></e-grid-column>
+					</e-grid-columns>
 				</ejs-grid>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="widget h-100">
+			<div class="d-flex justify-content-center align-items-center h-100">
+				<span>
+					<i class="fa-solid fa-plus fa-2xl"></i>
+				</span>
 			</div>
 		</div>
 	</div>
